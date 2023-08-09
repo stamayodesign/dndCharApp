@@ -1,6 +1,7 @@
 # RPG Dice Roller - Kotlin Project
 ## Introduction
-This project was made in Android Studio from April 2022 - May 2022. The application allows for simulated dice rolling ranging from multiples of the same die, multiples of different dies, and custom dice inputs. The application also allows the addition of modifiers before OR after the dice roll.
+#### Author: Steve Tamayo
+This project was made in Android Studio from April 2022 - May 2022. The application allows for simulated dice rolling ranging from multiples of the same die, multiples of different dice, and custom dice inputs. The application also allows the addition of modifiers before OR after the dice roll.
 
 My inspiration for this project was that I wanted to add Kotlin to my toolbelt as a software developer and my hobbies of various TableTop Role Playing Games (TTRPGs) including Dungeons & Dragons, Ironsworn, and GURPs. 
 
@@ -119,7 +120,7 @@ The right one will add a generic modifier, including negative numbers. (This wil
 
 ### <a name="cdt"></a>Custom Dice Tab
 
-This tab has an input a string for the user to enter their own custom dice roll using a "xdy format", with "x" being the number of dice and "y" being the number of sides. 
+This tab has an input text box for the user to enter their own custom dice roll using a "xdy format", with "x" being the number of dice and "y" being the number of sides. 
 
 <img src="images/dndCharApp_image18-CustomDiceTab.jpg" width = "250"/>
 
@@ -128,9 +129,9 @@ This also allows for multiple dice and modifiers to be entered. For example, if 
 <p float="left">
 <img src="images/dndCharApp_image19-RandomString.jpg" width = "250"/>
   &nbsp;&nbsp;
-<img src="images/dndCharApp_image20-CustomeDiceRoll.jpg" width = "250"/>
-  
-[Jump to Top](#top)<br/>
+<img src="images/dndCharApp_image20-CustomeDiceRoll.jpg" width = "250"/>  
 </p>
 
 The input will only accept the letter "d", numbers, and the plus (+) symbol, displaying a pop-up saying there is something wrong with the input. It will also pop-up if it detects two or more "d"s next to each other.
+
+[Jump to Top](#top)<br/>
