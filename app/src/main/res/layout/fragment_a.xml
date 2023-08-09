@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentA">
+
+    <TextView
+        android:id="@+id/fragAtvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editing Stats"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/fragAllStatsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragAtvTitle">
+
+        <TextView
+            android:id="@+id/fragAllStatsName_STR"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="STR"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAllStatsName_DEX"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="DEX"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAllStatsName_STR"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAllStatsName_CON"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="CON"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAllStatsName_DEX"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAllStatsName_INT"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="INT"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAllStatsName_CON"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAllStatsName_WIS"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="WIS"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAllStatsName_INT"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAllStatsName_CHA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="CHA"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAllStatsName_WIS"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragAlletStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragAllStatsName">
+
+        <EditText
+            android:id="@+id/fragAetStat_STR"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:hint="STR"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_DEX"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragAetStat_DEX"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="DEX"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_CON"
+            app:layout_constraintStart_toEndOf="@+id/fragAetStat_STR"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragAetStat_CON"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="CON"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_INT"
+            app:layout_constraintStart_toEndOf="@+id/fragAetStat_DEX"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragAetStat_INT"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="INT"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_WIS"
+            app:layout_constraintStart_toEndOf="@+id/fragAetStat_CON"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragAetStat_WIS"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="WIS"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_CHA"
+            app:layout_constraintStart_toEndOf="@+id/fragAetStat_INT"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/fragAetStat_CHA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="CHA"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:nextFocusDown="@+id/fragAetStat_STR"
+            app:layout_constraintStart_toEndOf="@+id/fragAetStat_WIS"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragAllMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragAlletStats">
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_STR"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_DEX"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAtvStatMod_STR"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_CON"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAtvStatMod_DEX"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_INT"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAtvStatMod_CON"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_WIS"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAtvStatMod_INT"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragAtvStatMod_CHA"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@+id/fragAtvStatMod_WIS"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragAllMod">
+
+        <Button
+            android:id="@+id/fragAbtnSaveStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Stats"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+        <Button
+            android:id="@+id/fragAbtnBackTofragMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Return without Saving"
+            app:layout_constraintStart_toStartOf="@+id/fragAbtnSaveStats"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

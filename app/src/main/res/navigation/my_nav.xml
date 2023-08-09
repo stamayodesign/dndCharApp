@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dndcharapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentA"
+            app:destination="@id/fragmentA" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentIronswornStatic"
+            app:destination="@id/fragmentIronswornStatic" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.dndcharapp.fragmentA"
+        android:label="fragment_a"
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_fragmentA_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentIronswornStatic"
+        android:name="com.example.dndcharapp.fragmentIronswornStatic"
+        android:label="fragment_ironsworn_static"
+        tools:layout="@layout/fragment_ironsworn_static" >
+        <action
+            android:id="@+id/action_fragmentIronswornStatic_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
