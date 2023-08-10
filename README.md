@@ -5,7 +5,7 @@ This project was made in Android Studio from April 2022 - May 2022. The applicat
 
 My inspiration for this project was that I wanted to add Kotlin to my toolbelt as a software developer and my hobbies of various TableTop Role Playing Games (TTRPGs) including Dungeons & Dragons, Ironsworn, and GURPs. 
 
-# <a name="top"></a> How to use App
+# <a name="top"></a> Using the App
 
 <p float="left">
 <img src="images/dndCharApp_image0-landingpage.jpg" width = "250"/>
