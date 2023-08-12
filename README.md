@@ -14,12 +14,12 @@ My inspiration for this project was that I wanted to add Kotlin to my toolbelt a
 </p>
 
 The app is divided into four main parts:<br/>
-A. [Tabs](#pt1)<br/>
-B. [Display](#pt2)<br/>
-C. [Dice Buttons](#pt3)<br/>
-D. [Character Stats](#pt4)<br/>
+[A. Tabs](#pt1)<br/>
+[B. Display](#pt2)<br/>
+[C. Dice Buttons](#pt3)<br/>
+[D. Character Stats](#pt4)<br/>
 
-## <a name="pt1"></a>(A) Tabs
+## <a name="pt1"></a>A. Tabs
 <img src="images/dndCharApp_image1-tabs.jpg" width = "500"/>
 
 The app has three modes. By default, the app opens in "SINGLE DICE" mode. The current mode's tab button will be red when in use. Click one of the following to jump to a particular "mode" to learn more:
@@ -28,7 +28,7 @@ The app has three modes. By default, the app opens in "SINGLE DICE" mode. The cu
 2. [Multi Dice Tab](#mdt)<br/>
 3. [Custom Dice Tab](#cdt)<br/>
 
-## <a name="pt2"></a>(B) Display
+## <a name="pt2"></a>B. Display
 
 When rolling dice, text will appear here declaring what kind of dice and modifiers are applying to the roll. *Note that in "MULTI DICE" mode, the text will update as you add to the "pool", saying "Rolling" instead of "Rolled" until you hit the "Roll" button in that mode.
 
@@ -38,13 +38,13 @@ The total of the roll plus any modifiers will appear centered below this. You ca
 
 [Jump to Top](#top)<br/>
 
-## <a name="pt3"></a>(C) Dice Buttons
+## <a name="pt3"></a>C. Dice Buttons
 
 This section's UI changes depending on which tab/mode you are currently displaying. These will be touched upon more in the mode section.
 
 [Jump to Top](#top)<br/>
 
-## <a name="pt4"></a>(D) Character Stats
+## <a name="pt4"></a>D. Character Stats
 
 The default stats are in a format that matches a Dungeons and Dragon's character scores. By pressing one of these six scores, the modifier will be added to the roll. This can be toggled before or after the roll is made. 
 
